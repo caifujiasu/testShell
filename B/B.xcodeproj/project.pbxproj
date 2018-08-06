@@ -10,6 +10,8 @@
 		24C9EA8F21187055008D9A64 /* B.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C9EA8521187054008D9A64 /* B.framework */; };
 		24C9EA9421187055008D9A64 /* BTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C9EA9321187055008D9A64 /* BTests.m */; };
 		24C9EA9621187055008D9A64 /* B.h in Headers */ = {isa = PBXBuildFile; fileRef = 24C9EA8821187054008D9A64 /* B.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24C9EAC9211871D4008D9A64 /* ZSBClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 24C9EAC7211871D4008D9A64 /* ZSBClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24C9EACA211871D4008D9A64 /* ZSBClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C9EAC8211871D4008D9A64 /* ZSBClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		24C9EA8E21187055008D9A64 /* BTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C9EA9321187055008D9A64 /* BTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTests.m; sourceTree = "<group>"; };
 		24C9EA9521187055008D9A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C9EAC7211871D4008D9A64 /* ZSBClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSBClass.h; sourceTree = "<group>"; };
+		24C9EAC8211871D4008D9A64 /* ZSBClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSBClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				24C9EA8821187054008D9A64 /* B.h */,
 				24C9EA8921187054008D9A64 /* Info.plist */,
+				24C9EAC7211871D4008D9A64 /* ZSBClass.h */,
+				24C9EAC8211871D4008D9A64 /* ZSBClass.m */,
 			);
 			path = B;
 			sourceTree = "<group>";
@@ -94,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24C9EA9621187055008D9A64 /* B.h in Headers */,
+				24C9EAC9211871D4008D9A64 /* ZSBClass.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C9EACA211871D4008D9A64 /* ZSBClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

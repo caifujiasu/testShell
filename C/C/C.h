@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char CVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <C/PublicHeader.h>
 
 
+#import <C/ZSCClass.h>

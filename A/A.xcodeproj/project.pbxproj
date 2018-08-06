@@ -15,6 +15,10 @@
 		24C9EA592118703D008D9A64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C9EA582118703D008D9A64 /* main.m */; };
 		24C9EA632118703D008D9A64 /* ATests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C9EA622118703D008D9A64 /* ATests.m */; };
 		24C9EA6E2118703D008D9A64 /* AUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C9EA6D2118703D008D9A64 /* AUITests.m */; };
+		24C9EACD211873A7008D9A64 /* C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C9EACC211873A7008D9A64 /* C.framework */; };
+		24C9EACE211873A7008D9A64 /* C.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24C9EACC211873A7008D9A64 /* C.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24C9EAD1211873B3008D9A64 /* B.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C9EAD0211873B3008D9A64 /* B.framework */; };
+		24C9EAD2211873B3008D9A64 /* B.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24C9EAD0211873B3008D9A64 /* B.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		24C9EACF211873A7008D9A64 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				24C9EACE211873A7008D9A64 /* C.framework in Embed Frameworks */,
+				24C9EAD2211873B3008D9A64 /* B.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		24C9EA462118703B008D9A64 /* A.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C9EA492118703B008D9A64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +70,9 @@
 		24C9EA692118703D008D9A64 /* AUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C9EA6D2118703D008D9A64 /* AUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUITests.m; sourceTree = "<group>"; };
 		24C9EA6F2118703D008D9A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C9EACB21187293008D9A64 /* A.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A.pch; sourceTree = "<group>"; };
+		24C9EACC211873A7008D9A64 /* C.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = C.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C9EAD0211873B3008D9A64 /* B.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = B.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C9EACD211873A7008D9A64 /* C.framework in Frameworks */,
+				24C9EAD1211873B3008D9A64 /* B.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +105,8 @@
 		24C9EA3D2118703B008D9A64 = {
 			isa = PBXGroup;
 			children = (
+				24C9EAD0211873B3008D9A64 /* B.framework */,
+				24C9EACC211873A7008D9A64 /* C.framework */,
 				24C9EA482118703B008D9A64 /* A */,
 				24C9EA612118703D008D9A64 /* ATests */,
 				24C9EA6C2118703D008D9A64 /* AUITests */,
@@ -110,6 +136,7 @@
 				24C9EA542118703D008D9A64 /* LaunchScreen.storyboard */,
 				24C9EA572118703D008D9A64 /* Info.plist */,
 				24C9EA582118703D008D9A64 /* main.m */,
+				24C9EACB21187293008D9A64 /* A.pch */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -142,6 +169,7 @@
 				24C9EA422118703B008D9A64 /* Sources */,
 				24C9EA432118703B008D9A64 /* Frameworks */,
 				24C9EA442118703B008D9A64 /* Resources */,
+				24C9EACF211873A7008D9A64 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -434,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = A/A.pch;
 				INFOPLIST_FILE = A/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = A/A.pch;
 				INFOPLIST_FILE = A/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

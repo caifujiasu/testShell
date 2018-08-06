@@ -10,6 +10,8 @@
 		24C9EAB32118705D008D9A64 /* C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C9EAA92118705D008D9A64 /* C.framework */; };
 		24C9EAB82118705D008D9A64 /* CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C9EAB72118705D008D9A64 /* CTests.m */; };
 		24C9EABA2118705D008D9A64 /* C.h in Headers */ = {isa = PBXBuildFile; fileRef = 24C9EAAC2118705D008D9A64 /* C.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24C9EAC521187189008D9A64 /* ZSCClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 24C9EAC321187189008D9A64 /* ZSCClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24C9EAC621187189008D9A64 /* ZSCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C9EAC421187189008D9A64 /* ZSCClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		24C9EAB22118705D008D9A64 /* CTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C9EAB72118705D008D9A64 /* CTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTests.m; sourceTree = "<group>"; };
 		24C9EAB92118705D008D9A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C9EAC321187189008D9A64 /* ZSCClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSCClass.h; sourceTree = "<group>"; };
+		24C9EAC421187189008D9A64 /* ZSCClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSCClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				24C9EAAC2118705D008D9A64 /* C.h */,
 				24C9EAAD2118705D008D9A64 /* Info.plist */,
+				24C9EAC321187189008D9A64 /* ZSCClass.h */,
+				24C9EAC421187189008D9A64 /* ZSCClass.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -93,6 +99,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C9EAC521187189008D9A64 /* ZSCClass.h in Headers */,
 				24C9EABA2118705D008D9A64 /* C.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C9EAC621187189008D9A64 /* ZSCClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
