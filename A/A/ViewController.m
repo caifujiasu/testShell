@@ -27,6 +27,9 @@
     
     ZSBClass *b = [ZSBClass new];
     [b b];
+    
+    ZSDClass *d = [ZSDClass new];
+    [d d];
 }
 
 
